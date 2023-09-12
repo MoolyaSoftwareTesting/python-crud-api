@@ -1,7 +1,7 @@
 import unittest
 import json
 import os
-
+from main import load_json
 
 # Define a test class that inherits from unittest.TestCase
 class TestLoadJson(unittest.TestCase):
