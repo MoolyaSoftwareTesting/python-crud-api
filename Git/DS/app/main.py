@@ -6,7 +6,6 @@ file_open = open(f'{file_name}')
 
 data = json.load(file_open)
 
-
 string = ""
 
 data_2 = []
