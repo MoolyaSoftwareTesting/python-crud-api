@@ -1,18 +1,13 @@
 import json
-import sys
-
-file_name = sys.argv[1]
-file_open = open(f'{file_name}')
-
+file_open = open("data.json")
 data = json.load(file_open)
-
 string = ""
 
-data_2 = []
 
-for i in data['name']:
-    for j in dict.values(i):
-        string = string + j
+def load_json(data):
+    global string
+    string = data['name'][0]['name'] + " " + data['name'][1]['name']
+    print(string)
 
+load_json(data=data)
 
-print(string)
