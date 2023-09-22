@@ -9,5 +9,7 @@ def load_json(data):
     string = data['name'][0]['name'] + " " + data['name'][1]['name']
     print(string)
 
-load_json(data=data)
 
+
+
+load_json(data=data)
