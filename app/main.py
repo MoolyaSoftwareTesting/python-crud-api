@@ -6,5 +6,6 @@ def load_json(data):
     string = json_data['name'][0]['name'] + " " + json_data['name'][1]['name']
     return string
 
+
 #2.0.6
 print(load_json("data.json"))
