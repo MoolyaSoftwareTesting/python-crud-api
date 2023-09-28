@@ -1,10 +1,6 @@
 {
-  "name": [
-    {
-      "name": "Raghavendra"
-    },
-    {
-      "name": "Radhakrishanan"
-    }
-  ]
+  "firstname": "Raghav",
+  "lastname":"Radhakrishnan",
+  "mobile":"9731154033",
+  "email": "email@email.com"
 }

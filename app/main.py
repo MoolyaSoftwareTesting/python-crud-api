@@ -2,11 +2,11 @@ import json
 
 
 def load_json(data):
-    global string
+    global return_data
     file_open = open(data)
     json_data = json.load(file_open)
-    string = json_data['name'][0]['name'] + " " + json_data['name'][1]['name']
-    return string
+    return_data = "Name: " + json_data['firstname'] + " " + json_data['lastname'] + ", "+ "email: " + json_data['email'] + ", " + "mobile: " +json_data['mobile']
+    return return_data
 
-
+#V2.0.9
 print(load_json("data.json"))
