@@ -5,15 +5,17 @@ def load_json(data):
     global return_data
     file_open = open(data)
     json_data = json.load(file_open)
-    return_data = "Name: " + json_data['firstname'] + " " + json_data['lastname'] + ", " + "email: " + json_data[
-        'email'] + ", " + "mobile: " + json_data['mobile']
-    return return_data
+    return json_data[0]
 
 
-# def update_json(jsonfile, data):
-#     """input will be a dict and the file"""
-#     """data is a dict"""
-#     """jsonfile is a file"""
+def update_json(new_data, file_name="data.json"):
+    with open("data.json", 'r+') as file:
+        file_data = json.load(file)
+        file_data.append(new_data)
+        file.seek(0)
+        json.dump(file_data, file, indent=4)
 
+
+update_json(load_json("data.json"))
 # V2.0.10
-print(load_json("data.json"))
+#print(load_json("data.json"))
