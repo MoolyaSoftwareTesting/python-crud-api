@@ -1,7 +1,8 @@
 import unittest
 import json
 import os
-from main import load_json
+from app.main import load_json
+
 
 # Define a test class that inherits from unittest.TestCase
 class TestLoadJson(unittest.TestCase):
@@ -33,6 +34,6 @@ class TestLoadJson(unittest.TestCase):
         with self.assertRaises(Exception):
             load_json(non_existent_file)
 
+
 if __name__ == '__main__':
     unittest.main()
-
