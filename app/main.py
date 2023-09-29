@@ -1,6 +1,5 @@
 import json
 
-
 def load_json(data):
     global return_data
     file_open = open(data)
