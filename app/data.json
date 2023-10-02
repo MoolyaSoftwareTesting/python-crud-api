@@ -1,26 +1,10 @@
-[
-    {
-        "firstname": "Raghav",
-        "lastname": "Radhakrishnan",
-        "mobile": "9731154033",
-        "email": "email@email.com"
-    },
-    {
-        "firstname": "Raghav",
-        "lastname": "Radhakrishnan",
-        "mobile": "9731154033",
-        "email": "email@email.com"
-    },
-    {
-        "firstname": "Raghav",
-        "lastname": "Radhakrishnan",
-        "mobile": "9731154033",
-        "email": "email@email.com"
-    },
-    {
-        "firstname": "Raghav",
-        "lastname": "Radhakrishnan",
-        "mobile": "9731154033",
-        "email": "email@email.com"
-    }
-]
+{
+    "data": [
+        {
+            "firstname": "Raghav",
+            "lastname": "R",
+            "mobile": "9731154034",
+            "email": "email@email.com"
+        }
+    ]
+}
