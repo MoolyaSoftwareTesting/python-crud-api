@@ -5,7 +5,6 @@ def load_json(data):
     file_open = open(data)
     json_data = json.load(file_open)
     update_json(json_data["data"][0])
-    # return json_data["data"][0]
 
 
 def update_json(new_data, filename='data.json'):
@@ -16,6 +15,8 @@ def update_json(new_data, filename='data.json'):
         json.dump(file_data, file, indent=4)
         string = "Done Right"
         return string
+
+# V2.0.10
 
 
 load_json("data.json")
