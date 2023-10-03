@@ -14,7 +14,6 @@ def update_json(new_data, filename='data.json'):
         file.seek(0)
         json.dump(file_data, file, indent=4)
 
+
 # V2.0.11
-
-
 load_json("data.json")
