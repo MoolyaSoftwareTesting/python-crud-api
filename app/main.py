@@ -13,10 +13,8 @@ def update_json(new_data, filename='data.json'):
         file_data["data"].append(new_data)
         file.seek(0)
         json.dump(file_data, file, indent=4)
-        string = "Done Right"
-        return string
 
-# V2.0.10
+# V2.0.11
 
 
 load_json("data.json")
