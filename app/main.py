@@ -19,10 +19,20 @@ def update_json(n_data, filename):
     data['data'].append(n_data)
     with open(filename, "w") as f:
         json.dump(data, f, indent=4)
-    with open(filename, "r") as updated_file:
-        json_updated_file = json.load(updated_file)
-        return json_updated_file
+    return load_json(filename)
 
 
-# V2.0.12
-print(update_json(NEW_DATA, "data2.json"))
+def load_txt(n_data, filename):
+    with open(filename) as f:
+        lines = f.readlines()
+    with open(filename, "a") as update_txt:
+        update_txt.write(f"firstname: {n_data['firstname']}\n")
+        update_txt.write(f"lastname: {n_data['lastname']}\n")
+        update_txt.write(f"mobile: {n_data['mobile']}\n")
+        update_txt.write(f"email: {n_data['email']}\n \n")
+    return lines
+
+
+# V2.0.13
+print(update_json(NEW_DATA, "data.json"))
+print(load_txt(NEW_DATA, "text.txt"))
